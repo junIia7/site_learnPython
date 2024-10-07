@@ -1,0 +1,129 @@
+.lesson-container {
+    max-width: 75%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+  
+.lesson-section {
+    margin-bottom: 20px;
+}
+
+.lesson-header {
+    background-color: #343328;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.lesson-section h2 {
+    color: #333;
+    border-bottom: 2px solid #282c34;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.lesson-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.lesson-section pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+}
+
+.lesson-section code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.lesson-section ul, .lesson-section ol {
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+.lesson-section ul {
+    list-style-type: disc;
+}
+
+.lesson-section ol {
+    list-style-type: decimal;
+}
+
+.lesson-section ul li, .lesson-section ol li {
+    margin-bottom: 10px;
+}
+
+.lesson-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+/* Обеспечение корректного отображения переноса строк в <p> */
+.lesson-section p {
+    white-space: pre-wrap;
+}
+
+.lesson-section blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\\201C""\\201D""\\2018""\\2019";
+}
+
+.lesson-section blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.lesson-section blockquote p {
+    display: inline;
+    font-style: italic;
+}
+
+.lesson-image {
+    text-align: center; /* Центрируем содержимое по горизонтали */
+    margin: 20px; /* Отступ снизу */
+  }
+  
+  .lesson-image img {
+    display: block; /* Убираем пустые пространства под изображением */
+    margin: 0 auto; /* Центрируем изображение по горизонтали */
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Поддержка пропорционального масштабирования */
+  }
+  
+  .lesson-image input[type="text"] {
+    width: 100%; /* Ширина поля для ввода на 100% */
+    padding: 5px; /* Внутренние отступы */
+    margin-top: 5px; /* Отступ сверху */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+  }
+  
+  .lesson-image button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    padding: 5px 10px; /* Внутренние отступы кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границы */
+    cursor: pointer; /* Курсор в виде указателя */
+  }
+  
+  .lesson-image button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+  }
+  

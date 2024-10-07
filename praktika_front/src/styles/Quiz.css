@@ -1,0 +1,71 @@
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-section {
+    text-align: center;
+}
+
+.options-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options-section button {
+    background-color: #2e62ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.options-section button:hover {
+    background-color: #002b60;
+}
+
+.result-section {
+    text-align: center;
+}
+
+.result-section h2 {
+    color: #2e62ff;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column; /* Располагает кнопки по вертикали */
+    align-items: center; /* Выравнивает кнопки по левому краю */
+  }
+  
+.buttonChooseOpt {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: fit-content; /* Ширина равна содержимому */
+    text-align: center;
+    border-radius: 4px;
+}
+  
+.buttonChooseOpt:hover {
+    background-color: darkblue; /* Темно-синий фон при наведении */
+}
+
+.quiz-completed {
+    text-align: center; /* Центрируем текст по горизонтали внутри блока */
+    font-size: 18px; /* Размер шрифта текста feedback, замените на нужное значение */
+}
+  

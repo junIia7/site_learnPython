@@ -1,0 +1,163 @@
+/* src/styles/Navigation.css */
+
+.main-nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -270px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 10;
+}
+
+.main-nav.open {
+    position: fixed; /* Переключение на фиксированное позиционирование при открытии */
+    left: 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nav-item {
+    position: relative;
+    margin-bottom: 10px
+}
+  
+.nav-link {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.nav-link:hover {
+    color: #007bff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-toggle::after {
+    content: '';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu.show {
+    display: block;
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item::marker {
+    content: '';
+}
+
+.dropdown-item .nav-link {
+    padding: 10px;
+    padding-right: 5px;
+    padding-left: 2px;
+    display: block;
+}
+
+.dropdown-item .nav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 11;
+}
+
+.main-content {
+    margin-left: 0; /* Начальное положение контента */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-nav.open ~ .main-content {
+    margin-left: 270px; /* Положение контента после открытия меню */
+}
+
+.user-info {
+    padding: 0.6%;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #d1e8ff;
+}
+  
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.logout-button {
+    display: block; /* Чтобы применить margin: auto; */
+    margin: 10px auto; /* Отступы сверху/снизу по 10px, по бокам автоцентрирование */
+    padding: 5px 10px; /* Внутренние отступы */
+    background-color: #dc3545; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Указатель мыши при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+  
+.logout-button:hover {
+    background-color: #c82333; /* Цвет фона при наведении */
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Отступ справа между кнопкой и названием урока */
+}
+
+.delete-button:hover {
+    color: #c82333;
+}
+
+.user-lesson {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }

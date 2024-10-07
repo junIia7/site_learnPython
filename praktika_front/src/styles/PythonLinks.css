@@ -1,0 +1,33 @@
+.resources-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.resources-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-item {
+    margin-bottom: 20px;
+}
+
+.resource-item h2 {
+    margin-bottom: 5px;
+}
+
+.resource-item p {
+    margin: 5px 0;
+}
+
+.resource-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resource-item a:hover {
+    text-decoration: underline;
+}

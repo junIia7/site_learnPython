@@ -1,0 +1,33 @@
+.books-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.books-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-item {
+    margin-bottom: 20px;
+}
+
+.book-item h2 {
+    margin-bottom: 5px;
+}
+
+.book-item p {
+    margin: 5px 0;
+}
+
+.book-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.book-item a:hover {
+    text-decoration: underline;
+}
